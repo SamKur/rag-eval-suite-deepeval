@@ -27,6 +27,7 @@ class RagPipeline:
 
 # quick manual smoke test: python -m src.rag_pipeline
 if __name__ == "__main__":
+    
     rag = RagPipeline()
     result = rag.invoke("what is drift and why does it matter after deployment?")
     print("QUERY:  ", result["query"])
